@@ -1,18 +1,18 @@
 struct ChannelInfo
 {
-unsigned char busy;           //0-Свободен, 1-Занят          1
-char          *memory;        //Указатель на область памяти  1
-unsigned long size;           //Размер в байтах              4
-unsigned long size_step;      //Размер в DMA буфферах        4
-unsigned long curpos;         //Текущее смещение в байтах    4
-unsigned long curpos_step;    //Текущее смещение в DMA буфферах 4
-unsigned char volume;            //Громкость, чем больше тем тише 1
-unsigned char looping;        //Looping 1-да 0-нет                1
-unsigned char balright;       //громкость звука на каждый канал   1
-unsigned char balleft;        //только для стерео режима          1
-short         priority;       //приоритетность для звука          2
-unsigned char pause;          //флаг паузы
-short         *handle;        //хандл звука, хранит номер сампла
+unsigned char busy;           //0-╨б╨▓╨╛╨▒╨╛╨┤╨╡╨╜, 1-╨Ч╨░╨╜╤П╤В          1
+char          *memory;        //╨г╨║╨░╨╖╨░╤В╨╡╨╗╤М ╨╜╨░ ╨╛╨▒╨╗╨░╤Б╤В╤М ╨┐╨░╨╝╤П╤В╨╕  1
+unsigned long size;           //╨а╨░╨╖╨╝╨╡╤А ╨▓ ╨▒╨░╨╣╤В╨░╤Е              4
+unsigned long size_step;      //╨а╨░╨╖╨╝╨╡╤А ╨▓ DMA ╨▒╤Г╤Д╤Д╨╡╤А╨░╤Е        4
+unsigned long curpos;         //╨в╨╡╨║╤Г╤Й╨╡╨╡ ╤Б╨╝╨╡╤Й╨╡╨╜╨╕╨╡ ╨▓ ╨▒╨░╨╣╤В╨░╤Е    4
+unsigned long curpos_step;    //╨в╨╡╨║╤Г╤Й╨╡╨╡ ╤Б╨╝╨╡╤Й╨╡╨╜╨╕╨╡ ╨▓ DMA ╨▒╤Г╤Д╤Д╨╡╤А╨░╤Е 4
+unsigned char volume;            //╨У╤А╨╛╨╝╨║╨╛╤Б╤В╤М, ╤З╨╡╨╝ ╨▒╨╛╨╗╤М╤И╨╡ ╤В╨╡╨╝ ╤В╨╕╤И╨╡ 1
+unsigned char looping;        //Looping 1-╨┤╨░ 0-╨╜╨╡╤В                1
+unsigned char balright;       //╨│╤А╨╛╨╝╨║╨╛╤Б╤В╤М ╨╖╨▓╤Г╨║╨░ ╨╜╨░ ╨║╨░╨╢╨┤╤Л╨╣ ╨║╨░╨╜╨░╨╗   1
+unsigned char balleft;        //╤В╨╛╨╗╤М╨║╨╛ ╨┤╨╗╤П ╤Б╤В╨╡╤А╨╡╨╛ ╤А╨╡╨╢╨╕╨╝╨░          1
+short         priority;       //╨┐╤А╨╕╨╛╤А╨╕╤В╨╡╤В╨╜╨╛╤Б╤В╤М ╨┤╨╗╤П ╨╖╨▓╤Г╨║╨░          2
+unsigned char pause;          //╤Д╨╗╨░╨│ ╨┐╨░╤Г╨╖╤Л
+short         *handle;        //╤Е╨░╨╜╨┤╨╗ ╨╖╨▓╤Г╨║╨░, ╤Е╤А╨░╨╜╨╕╤В ╨╜╨╛╨╝╨╡╤А ╤Б╨░╨╝╨┐╨╗╨░
 //-----------------------------------------------------------------------------
 unsigned rate;
 char channels;
@@ -24,14 +24,14 @@ unsigned quartershiftlength;
 };
 struct snd
       {
-       void *buffer;//УКАЗАТЕЛЬ НА БУФЕР
-       unsigned long length;//длина рава
-       short priority;//его приоритетность звучания
-       unsigned char volume;//громкость исполнения
-       char looping;//флаг зацикливания
-       short *handle;//указатель на handler звука, при закрытии канала
-                     //возвращает -1.
-       char balance;//начальная установка баланса для проигрывания
+       void *buffer;//╨г╨Ъ╨Р╨Ч╨Р╨в╨Х╨Ы╨м ╨Э╨Р ╨С╨г╨д╨Х╨а
+       unsigned long length;//╨┤╨╗╨╕╨╜╨░ ╤А╨░╨▓╨░
+       short priority;//╨╡╨│╨╛ ╨┐╤А╨╕╨╛╤А╨╕╤В╨╡╤В╨╜╨╛╤Б╤В╤М ╨╖╨▓╤Г╤З╨░╨╜╨╕╤П
+       unsigned char volume;//╨│╤А╨╛╨╝╨║╨╛╤Б╤В╤М ╨╕╤Б╨┐╨╛╨╗╨╜╨╡╨╜╨╕╤П
+       char looping;//╤Д╨╗╨░╨│ ╨╖╨░╤Ж╨╕╨║╨╗╨╕╨▓╨░╨╜╨╕╤П
+       short *handle;//╤Г╨║╨░╨╖╨░╤В╨╡╨╗╤М ╨╜╨░ handler ╨╖╨▓╤Г╨║╨░, ╨┐╤А╨╕ ╨╖╨░╨║╤А╤Л╤В╨╕╨╕ ╨║╨░╨╜╨░╨╗╨░
+                     //╨▓╨╛╨╖╨▓╤А╨░╤Й╨░╨╡╤В -1.
+       char balance;//╨╜╨░╤З╨░╨╗╤М╨╜╨░╤П ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ ╨▒╨░╨╗╨░╨╜╤Б╨░ ╨┤╨╗╤П ╨┐╤А╨╛╨╕╨│╤А╤Л╨▓╨░╨╜╨╕╤П
        char mode;//mono or stereo
        char bits;//nuber bits of sample
        unsigned rate;//rate of sample

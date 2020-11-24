@@ -52,7 +52,7 @@ void MixVoidSound(unsigned short *buf1,unsigned long len)
          loop l1
         }
     }
-//¨®™Ë®‡Æ¢†≠®• §´Ô ·‚•‡•Æ ‡•¶®¨† 8 °®‚ (ß†Ø®·Ï °†©‚† Á•‡•ß Æ§®≠)
+//–º–∏–∫—à–∏—Ä–æ–≤–∞–Ω–∏–µ –¥–ª—è —Å—Ç–µ—Ä–µ–æ —Ä–µ–∂–∏–º–∞ 8 –±–∏—Ç (–∑–∞–ø–∏—Å—å –±–∞–π—Ç–∞ —á–µ—Ä–µ–∑ –æ–¥–∏–Ω)
 inline void MixVoicesStereo(unsigned short *buf1,char *buf2,unsigned long len,
                             unsigned char curvol,unsigned char balance,unsigned k)
     {
@@ -98,7 +98,7 @@ inline void MixVoicesStereo(unsigned short *buf1,char *buf2,unsigned long len,
            jnz repeat
           }
     }
-//ëÆß§†‚Ï ®ß Virtual Buffer 8 bit ≠Æ‡¨†´Ï≠Î© ·¨®™Ë•≠≠Î© DMA buffer 8 bit
+//–°–æ–∑–¥–∞—Ç—å –∏–∑ Virtual Buffer 8 bit –Ω–æ—Ä–º–∞–ª—å–Ω—ã–π —Å–º–∏–∫—à–µ–Ω–Ω—ã–π DMA buffer 8 bit
 inline void CopyData8(char *buf1,unsigned short *buf2)
     {
      _asm {
@@ -116,7 +116,7 @@ inline void CopyData8(char *buf1,unsigned short *buf2)
        loop repeat
           }
     }
-//ëÆß§†‚Ï ®ß Virtual Buffer 16 bit ≠Æ‡¨†´Ï≠Î© ·¨®™Ë•≠≠Î© DMA buffer 16 bit
+//–°–æ–∑–¥–∞—Ç—å –∏–∑ Virtual Buffer 16 bit –Ω–æ—Ä–º–∞–ª—å–Ω—ã–π —Å–º–∏–∫—à–µ–Ω–Ω—ã–π DMA buffer 16 bit
 inline void CopyData16(char *buf1,unsigned short *buf2)
     {
      _asm {

@@ -4,9 +4,9 @@
 #define REVERSE 0xFF
 #define LOOP    0xFF
 #define UNLOOP  0x00
-#define STEREO  0xFF// ०��� �ந��뢠���
+#define STEREO  0xFF// режимы проигрывания
 #define MONO    0x00//
-#define _16BIT  0xFF//��⭮��� ��㪠
+#define _16BIT  0xFF//битность звука
 #define _8BIT   0x00//
 #include "channel.h"
 short dwse_GetMajorVer(void);

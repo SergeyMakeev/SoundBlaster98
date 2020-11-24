@@ -2,39 +2,39 @@
 /*             COPYRIGHT (c) 1998 DIGITAL WORLD Co.                     */
 /*                  (Stereo and mono support)                           */
 /*                                                                      */
-//                             ç†Ø®·†≠Æ
-//***********èÆ§§•‡¶™† Sound Blaster'a********************************
-//         è‡Æ£‡†¨¨®·‚ : å†™••¢ ë•‡£•© (Joker)
-//  ëÆ¢•‚Î ® ØÆ§·™†ß™® : ä„ß≠•ÊÆ¢ Ä´•™·†≠§‡ (Alexander)
+//                             –ù–∞–ø–∏—Å–∞–Ω–æ
+//***********–ü–æ–¥–¥–µ—Ä–∂–∫–∞ Sound Blaster'a********************************
+//         –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç : –ú–∞–∫–µ–µ–≤ –°–µ—Ä–≥–µ–π (Joker)
+//  –°–æ–≤–µ—Ç—ã –∏ –ø–æ–¥—Å–∫–∞–∑–∫–∏ : –ö—É–∑–Ω–µ—Ü–æ–≤ –ê–ª–µ–∫—Å–∞–Ω–¥—Ä (Alexander)
 //
 //**********RealTime Sound Mixing ver 1.0******************************
-//         è‡Æ£‡†¨¨®·‚ : ÉÆ‡®≠ å†™·®¨ (Maxx)
-//           Some Help : ä„ß≠•ÊÆ¢ Ä´•™·†≠§‡ (Alexander)
+//         –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx)
+//           Some Help : –ö—É–∑–Ω–µ—Ü–æ–≤ –ê–ª–µ–∫—Å–∞–Ω–¥—Ä (Alexander)
 //
 //
 //**********RealTime Sound Mixing ver 2.000.13*************************
-//         è‡Æ£‡†¨¨®·‚ : å†™••¢ ë•‡£•© (Joker)
-//                à§•® : åàäêéÄêí
+//         –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç : –ú–∞–∫–µ–µ–≤ –°–µ—Ä–≥–µ–π (Joker)
+//                –ò–¥–µ–∏ : –ú–ò–ö–†–û–ê–†–¢
 //
 //**********RealTime Sound Mixing ver 3.000.13*************************
-//         è‡Æ£‡†¨¨®·‚ : å†™••¢ ë•‡£•© (Joker)
-//                à§•® : ÉÆ‡®≠ å†™·®¨ (Maxx)
-//           Some Help : ä„ß≠•ÊÆ¢ Ä´•™·†≠§‡ (Alexander)
-//  à§•Ô 16 bit mixing : Ethan Brodsky
-//  à§•Ô Timer Restore : Niklas Beisert
-//**********RealTime Sound Mixing ver 4.000.00 ¨Æ≠Æ *******************
-//        è‡Æ£‡†¨¨®·‚  : ÉÆ‡®≠ å†™·®¨ (Maxx),
-//               à§•®  : å†™••¢ ë•‡£•© (Joker)
+//         –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç : –ú–∞–∫–µ–µ–≤ –°–µ—Ä–≥–µ–π (Joker)
+//                –ò–¥–µ–∏ : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx)
+//           Some Help : –ö—É–∑–Ω–µ—Ü–æ–≤ –ê–ª–µ–∫—Å–∞–Ω–¥—Ä (Alexander)
+//  –ò–¥–µ—è 16 bit mixing : Ethan Brodsky
+//  –ò–¥–µ—è Timer Restore : Niklas Beisert
+//**********RealTime Sound Mixing ver 4.000.00 –º–æ–Ω–æ *******************
+//        –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç  : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx),
+//               –ò–¥–µ–∏  : –ú–∞–∫–µ–µ–≤ –°–µ—Ä–≥–µ–π (Joker)
 
-//**********RealTime Sound Mixing ver 5.000.00 ·‚•‡•Æ *****************
-//        è‡Æ£‡†¨¨®·‚  : ÉÆ‡®≠ å†™·®¨ (Maxx),
-//               à§•®  : å†™••¢ ë•‡£•© (Joker)
-//********** RealTime Sound Mixing ver 5.001  ·‚•‡•Æ *****************
-//        Ñ®≠†¨®Á•·™Æ• ®ß¨•≠•≠®• ¢·•Â Ø†‡†¨•‚‡Æ¢.
-//        è‡Æ£‡†¨¨®·‚  : ÉÆ‡®≠ å†™·®¨ (Maxx),
-//********** RealTime Sound Mixing ver 6.00  ·‚•‡•Æ *****************
-//        Ñ®≠†¨®Á•·™Æ• ®ß¨•≠•≠®• ¢·•Â Ø†‡†¨•‚‡Æ¢.
-//        è‡Æ£‡†¨¨®·‚  : ÉÆ‡®≠ å†™·®¨ (Maxx),
+//**********RealTime Sound Mixing ver 5.000.00 —Å—Ç–µ—Ä–µ–æ *****************
+//        –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç  : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx),
+//               –ò–¥–µ–∏  : –ú–∞–∫–µ–µ–≤ –°–µ—Ä–≥–µ–π (Joker)
+//********** RealTime Sound Mixing ver 5.001  —Å—Ç–µ—Ä–µ–æ *****************
+//        –î–∏–Ω–∞–º–∏—á–µ—Å–∫–æ–µ –∏–∑–º–µ–Ω–µ–Ω–∏–µ –≤—Å–µ—Ö –ø–∞—Ä–∞–º–µ—Ç—Ä–æ–≤.
+//        –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç  : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx),
+//********** RealTime Sound Mixing ver 6.00  —Å—Ç–µ—Ä–µ–æ *****************
+//        –î–∏–Ω–∞–º–∏—á–µ—Å–∫–æ–µ –∏–∑–º–µ–Ω–µ–Ω–∏–µ –≤—Å–µ—Ö –ø–∞—Ä–∞–º–µ—Ç—Ä–æ–≤.
+//        –ü—Ä–æ–≥—Ä–∞–º–º–∏—Å—Ç  : –ì–æ—Ä–∏–Ω –ú–∞–∫—Å–∏–º (Maxx),
 //        Any Rate
 
 #include <dos.h>
@@ -47,7 +47,7 @@
 #include "load.cpp"
 #define LOBYTE(l)         ((unsigned char)(l))
 #define HIBYTE(l)         ((unsigned char)((l) >> 8))
-// í†°´®Ê† DMA ØÆ‡‚Æ¢
+// –¢–∞–±–ª–∏—Ü–∞ DMA –ø–æ—Ä—Ç–æ–≤
 static unsigned char dmaPorts[8][6] = {
                                         {0x00,0x01,0x0A,0x0B,0x0C,0x87},
                                         {0x02,0x03,0x0A,0x0B,0x0C,0x83},
@@ -59,36 +59,36 @@ static unsigned char dmaPorts[8][6] = {
                                         {0xCC,0xCE,0xD4,0xD6,0xD8,0x8A}
 
                                       };
-//≠†Á†´Ï≠Î© ‡†ß¨•‡ 2 * DMA °„‰‰•‡† Ø‡® Hz >= 11025 Hz, 8 °®‚.
-//≠†Á†´Ï≠Î© ‡†ß¨•‡ DMA °„‰‰•‡† Ø‡® Hz < 11025 Hz, 8 °®‚.
-//è‡® „¢•´®Á•≠®® Á†·‚Æ‚Î, °®‚≠Æ·‚® ® ‚.§. ‡†ß¨•‡ §¨† °„‰‰•‡† „¢•´®Á®¢†•‚·Ô!
+//–Ω–∞—á–∞–ª—å–Ω—ã–π —Ä–∞–∑–º–µ—Ä 2 * DMA –±—É—Ñ—Ñ–µ—Ä–∞ –ø—Ä–∏ Hz >= 11025 Hz, 8 –±–∏—Ç.
+//–Ω–∞—á–∞–ª—å–Ω—ã–π —Ä–∞–∑–º–µ—Ä DMA –±—É—Ñ—Ñ–µ—Ä–∞ –ø—Ä–∏ Hz < 11025 Hz, 8 –±–∏—Ç.
+//–ü—Ä–∏ —É–≤–µ–ª–∏—á–µ–Ω–∏–∏ —á–∞—Å—Ç–æ—Ç—ã, –±–∏—Ç–Ω–æ—Å—Ç–∏ –∏ —Ç.–¥. —Ä–∞–∑–º–µ—Ä –¥–º–∞ –±—É—Ñ—Ñ–µ—Ä–∞ —É–≤–µ–ª–∏—á–∏–≤–∞–µ—Ç—Å—è!
 #define               BEGSIZE 512
-//·®·‚•¨≠Î• Ø•‡•¨•≠≠Î• §´Ô ‡†°Æ‚Î · dma buffer'Æ¨.
+//—Å–∏—Å—Ç–µ–º–Ω—ã–µ –ø–µ—Ä–µ–º–µ–Ω–Ω—ã–µ –¥–ª—è —Ä–∞–±–æ—Ç—ã —Å dma buffer'–æ–º.
 static int           dmasize        = 1,
                      halfdmasize    = 1,
                      quarterdmasize = 1;
-char                 MaxChannel     = 8;  //å†™·®¨†´Ï≠Æ• Á®·´Æ ™†≠†´Æ¢ §´Ô MIXER'a
-const unsigned short TimerRate      = 100, //ó†·‚Æ‚† · ™Æ‚Æ‡Æ© ‡†°Æ‚†•‚ ‚†©¨•‡ ¢ £•‡Ê†Â
+char                 MaxChannel     = 8;  //–ú–∞–∫—Å–∏–º–∞–ª—å–Ω–æ–µ —á–∏—Å–ª–æ –∫–∞–Ω–∞–ª–æ–≤ –¥–ª—è MIXER'a
+const unsigned short TimerRate      = 100, //–ß–∞—Å—Ç–æ—Ç–∞ —Å –∫–æ—Ç–æ—Ä–æ–π —Ä–∞–±–æ—Ç–∞–µ—Ç —Ç–∞–π–º–µ—Ä –≤ –≥–µ—Ä—Ü–∞—Ö
                      OldRate        = TimerRate / 18.2;
-unsigned short       ActiveChannel  = 0; //äÆ´-¢Æ †™‚®¢≠ÎÂ ™†≠†´Æ¢
-char                 *buf           = 0; //ì™†ß†‚•´Ï ≠† DMA °„‰•‡
+unsigned short       ActiveChannel  = 0; //–ö–æ–ª-–≤–æ –∞–∫—Ç–∏–≤–Ω—ã—Ö –∫–∞–Ω–∞–ª–æ–≤
+char                 *buf           = 0; //–£–∫–∞–∑–∞—Ç–µ–ª—å –Ω–∞ DMA –±—É—Ñ–µ—Ä
 static unsigned char dmaCh,
                      *dmaPort;
 static int            dmaLen         = 1;
-unsigned short        rate           = 11025;         //ó†·‚Æ‚† §´Ô SB
+unsigned short        rate           = 11025;         //–ß–∞—Å—Ç–æ—Ç–∞ –¥–ª—è SB
 unsigned char         stereo         = 0;       //0-mono,1-stereo
 unsigned char         output16bit    = 0;  //0-8bit,1-16bit
 static short          sbPort         = 0x220,//Sound Blaster Port
                       sbIRQ          = 0x5 , //Sound Blaster Interrupt
                       sbDMA          = 1,    //Sound Blaster DMA chanel 8 bit
                       sbDMA16        = 5,    //Sound Blaster DMA chanel 16 bit
-                      sbUseVer       = 1,    //Ç•‡·®Ô DSP ¢ßÔ‚†Ô ®ß BLASTER Tx
-                      sbModel        = 1;    //çÆ¨•‡ ¨Æ§•´® Sound Blaster'a Tx
-unsigned short        DSPver         = 0,    //Ç•‡·®Ô DSP ¢ßÔ‚†Ô ®ß DSP
+                      sbUseVer       = 1,    //–í–µ—Ä—Å–∏—è DSP –≤–∑—è—Ç–∞—è –∏–∑ BLASTER Tx
+                      sbModel        = 1;    //–ù–æ–º–µ—Ä –º–æ–¥–µ–ª–∏ Sound Blaster'a Tx
+unsigned short        DSPver         = 0,    //–í–µ—Ä—Å–∏—è DSP –≤–∑—è—Ç–∞—è –∏–∑ DSP
                       sbTimerConst;
 static unsigned long summa7,
                      shiftarray;
-// éØ‡•§•´Ô•‚Ï·Ô ¢ £´†¢≠Æ¨ ‚•´• Ø‡Æ£‡†¨¨Î
+// –û–ø—Ä–µ–¥–µ–ª—è–µ—Ç—å—Å—è –≤ –≥–ª–∞–≤–Ω–æ–º —Ç–µ–ª–µ –ø—Ä–æ–≥—Ä–∞–º–º—ã
 int                  len            = 1;
 unsigned short       dmalen         = 1,
                      sblen          = 1,
@@ -112,29 +112,29 @@ static void (*playproc)();
 static void (*irqRoutine)();
 void VoidProcedure(void);
 static void (*UserProcedure)()      = VoidProcedure;
-//ØÆ§¨•≠Ô•‚ ØÆ§£Æ‚Æ¢™„ °„‰‰•‡†
+//–ø–æ–¥–º–µ–Ω—è–µ—Ç –ø–æ–¥–≥–æ—Ç–æ–≤–∫—É –±—É—Ñ—Ñ–µ—Ä–∞
 static void (*PrepareVirtualBuffer)();
 static void (*CopyData)(char *,unsigned short *);
 static void (__far __interrupt *tmOldTimer)();
 static void (*tmTimerRoutine)();
 void (__interrupt __far *oldVec)();
 short GetSettingsFromDevice();
-// é‚™´ÓÁ•≠®• Ø‡•‡Î¢†≠®©
+// –û—Ç–∫–ª—é—á–µ–Ω–∏–µ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π
 short _disableint();
 #pragma aux _disableint value [ax] = "pushf" "pop ax" "cli"
-// Ç™´ÓÁ•≠®• Ø‡•‡Î¢†≠®©
+// –í–∫–ª—é—á–µ–Ω–∏–µ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π
 void _restoreint(short);
 #pragma aux _restoreint parm [ax] = "push ax" "popf"
 #include "sndfunc.cpp"
 //#include "convert.cpp"
-// èÆ§·Á®‚†‚Ï sbTimerConst ®ß Á†·‚Æ‚Î
+// –ü–æ–¥—Å—á–∏—Ç–∞—Ç—å sbTimerConst –∏–∑ —á–∞—Å—Ç–æ—Ç—ã
 void CalculateTimerConst(unsigned short rt)
 {
  sbTimerConst = 256 - 1000000 / rt;
 }
-// èÆ´„Á®‚Ï ®ß BLASTER port,irq,dma,dma16,version
-// ®ß Ø•‡•¨•≠≠Æ© ·‡•§Î.
-// ÇÆß¢‡†È†•‚:   0-è•‡•¨•≠≠†Ô BLASTER ≠• „·‚†≠Æ¢´•≠†
+// –ü–æ–ª—É—á–∏—Ç—å –∏–∑ BLASTER port,irq,dma,dma16,version
+// –∏–∑ –ø–µ—Ä–µ–º–µ–Ω–Ω–æ–π —Å—Ä–µ–¥—ã.
+// –í–æ–∑–≤—Ä–∞—â–∞–µ—Ç:   0-–ü–µ—Ä–µ–º–µ–Ω–Ω–∞—è BLASTER –Ω–µ —É—Å—Ç–∞–Ω–æ–≤–ª–µ–Ω–∞
 //               1-OK
 static unsigned char GetBlasterInfo()
 {
@@ -143,7 +143,7 @@ static unsigned char GetBlasterInfo()
  sbIRQ    = -1;
  sbDMA    = -1;
  sbDMA16  = -1;
- //§ÆØÆ´≠®‚•´Ï≠†Ô ®≠‰Æ‡¨†Ê®Ô
+ //–¥–æ–ø–æ–ª–Ω–∏—Ç–µ–ª—å–Ω–∞—è –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—è
  sbUseVer = -1;
  char *s = getenv("BLASTER");
  if (!s) return 0;
@@ -184,34 +184,34 @@ static unsigned char GetBlasterInfo()
   return 1;
 }
 
-// ÇßÔ‚Ï ®ß SB ØÆ‡‚†
+// –í–∑—è—Ç—å –∏–∑ SB –ø–æ—Ä—Ç–∞
 static unsigned char inpSB(unsigned char p)
 {
  return inp( sbPort + p );
 }
 
-// á†™®≠„‚Ï ¢ SB ØÆ‡‚
+// –ó–∞–∫–∏–Ω—É—Ç—å –≤ SB –ø–æ—Ä—Ç
 static void outpSB(unsigned char p, unsigned char v)
 {
  outp( sbPort + p , v);
 }
 
-// á†™®≠„‚Ï ¢ DSP
+// –ó–∞–∫–∏–Ω—É—Ç—å –≤ DSP
 static void WriteDSP(unsigned char v)
 {
  while ( inpSB ( 0xC ) & 0x80 );
  outpSB( 0xC , v );
 }
 
-// ÇßÔ‚Ï ®ß DSP
+// –í–∑—è—Ç—å –∏–∑ DSP
 static unsigned char ReadDSP()
 {
  while (!( inpSB ( 0xE ) & 0x80 ));
  return inpSB( 0xA );
 }
-//ØÆ§™´ÓÁ†Ó‚·Ô ‰„≠™Ê®® ‡†·Ø‡•§•´•≠®Ô Ø†¨Ô‚® ® ≠†¢•·™† ≠† Ø‡•‡Î¢†≠®Ô ® ‚.§.
+//–ø–æ–¥–∫–ª—é—á–∞—é—Ç—Å—è —Ñ—É–Ω–∫—Ü–∏–∏ —Ä–∞—Å–ø—Ä–µ–¥–µ–ª–µ–Ω–∏—è –ø–∞–º—è—Ç–∏ –∏ –Ω–∞–≤–µ—Å–∫–∞ –Ω–∞ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏—è –∏ —Ç.–¥.
 #include "system.cpp"
-// è‡Æ®≠®‚®‚Ï SB
+// –ü—Ä–æ–∏–Ω–∏—Ç–∏—Ç—å SB
 static void InitSB()
 {
 outpSB(0x6,1);
@@ -232,7 +232,7 @@ static void InitSBp()
   outpSB(0x6,0);
   biosdelay(3);
 }
-// ë°‡Æ·®‚Ï DSP
+// –°–±—Ä–æ—Å–∏—Ç—å DSP
 static void ResetDSP()
 {
  outpSB(0x6,1);
@@ -241,50 +241,50 @@ static void ResetDSP()
  biosdelay(3);
 }
 
-// ì·‚†≠Æ¢®‚Ï Á†·‚Æ‚„
+// –£—Å—Ç–∞–Ω–æ–≤–∏—Ç—å —á–∞—Å—Ç–æ—Ç—É
 static setrateSB(unsigned char r)
 {
  WriteDSP(0x40);
  WriteDSP(r);
 }
 
-// èÆ§‚¢•‡§®‚Ï ¢Æß¢‡†‚ ®ß Ø‡•‡Î¢†≠®©
+// –ü–æ–¥—Ç–≤–µ—Ä–¥–∏—Ç—å –≤–æ–∑–≤—Ä–∞—Ç –∏–∑ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π
 static void IRQacknowl()
 {
  inpSB(0xE);
 }
 
-// èÆ§‚¢•‡§®‚Ï ¢Æß¢‡†‚ ®ß Ø‡•‡Î¢†≠®© §´Ô 16 °®‚≠ÎÂ ÆØ•‡†Ê®©
+// –ü–æ–¥—Ç–≤–µ—Ä–¥–∏—Ç—å –≤–æ–∑–≤—Ä–∞—Ç –∏–∑ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π –¥–ª—è 16 –±–∏—Ç–Ω—ã—Ö –æ–ø–µ—Ä–∞—Ü–∏–π
 static void IRQacknowl16()
 {
  inpSB(0xF);
 }
 
-// Ç™´ÓÁ®‚Ï ™Æ´Æ≠™®
+// –í–∫–ª—é—á–∏—Ç—å –∫–æ–ª–æ–Ω–∫–∏
 static void spkronSB()
 {
  WriteDSP(0xD1);
 }
 
-// ÇÎ™´ÓÁ®‚Ï ™Æ´Æ≠™®
+// –í—ã–∫–ª—é—á–∏—Ç—å –∫–æ–ª–æ–Ω–∫–∏
 static void spkroffSB()
 {
  WriteDSP(0xD3);
 }
-// á†·„≠„‚Ï ¢ MIXER
+// –ó–∞—Å—É–Ω—É—Ç—å –≤ MIXER
 static void writeMixer(unsigned char p, unsigned char v)
 {
  outpSB ( 0x4, p);
  outpSB ( 0x5, v);
 }
-// ÇßÔ‚Ï ®ß MIXER'a
+// –í–∑—è—Ç—å –∏–∑ MIXER'a
 static unsigned char readMixer(unsigned char p)
 {
  outpSB       ( 0x4,p);
  return inpSB ( 0x5 );
 }
 
-// èÆ´„Á®‚Ï DSP ¢•‡·®Ó
+// –ü–æ–ª—É—á–∏—Ç—å DSP –≤–µ—Ä—Å–∏—é
 static unsigned short getVersion()
 {
 WriteDSP(0xE1);
@@ -296,7 +296,7 @@ WriteDSP(0xE1);
  }
 }
 
-// à£‡†•‚ ≠† SB 1.x
+// –ò–≥—Ä–∞–µ—Ç –Ω–∞ SB 1.x
 static void sb1Player()
 {
  IRQacknowl();
@@ -305,26 +305,26 @@ static void sb1Player()
  WriteDSP( HIBYTE( sblen - 1));
 }
 
-// à£‡†•‚ ≠† SB Pro ® SB 2.x
-// (Ñ´Ô Å•≠†)
+// –ò–≥—Ä–∞–µ—Ç –Ω–∞ SB Pro –∏ SB 2.x
+// (–î–ª—è –ë–µ–Ω–∞)
 static void sb2proPlayerHS()
 {
  IRQacknowl();
  WriteDSP(0x91);
 }
-// à£‡†•‚ ≠† SB 16 ¢ 8 °®‚≠Æ¨ ‡•¶®¨•
+// –ò–≥—Ä–∞–µ—Ç –Ω–∞ SB 16 –≤ 8 –±–∏—Ç–Ω–æ–º —Ä–µ–∂–∏–º–µ
 static void sb16Player8()
 {
  IRQacknowl();
  WriteDSP(0x45);
 }
-// à£‡†•‚ ≠† SB 16 ¢ 16 °®‚≠Æ¨ ‡•¶®¨• (ä´†··)
+// –ò–≥—Ä–∞–µ—Ç –Ω–∞ SB 16 –≤ 16 –±–∏—Ç–Ω–æ–º —Ä–µ–∂–∏–º–µ (–ö–ª–∞—Å—Å)
 static void sb16Player16()
 {
  WriteDSP(0x47);
  IRQacknowl16();
 }
-// è‡Æ£‡†¨®‡‡„•‚ DMA
+// –ü—Ä–æ–≥—Ä–∞–º–∏—Ä—Ä—É–µ—Ç DMA
 void dmaStart(int ch, void *buf, int buflen, int autoinit)
 {
 dmaCh                 = ch & 7;
@@ -356,7 +356,7 @@ void dmaStop()
  outp(dmaPort[2],dmaCh | 4);
 }
 
-// èÆ´„Á®‚Ï ‚•™„È„Ó ØÆß®Ê®Ó ¢ DMA °„‰•‡•
+// –ü–æ–ª—É—á–∏—Ç—å —Ç–µ–∫—É—â—É—é –ø–æ–∑–∏—Ü–∏—é –≤ DMA –±—É—Ñ–µ—Ä–µ
 int dmaGetBufPos()
 {
  unsigned int a,b;
@@ -377,7 +377,7 @@ int dmaGetBufPos()
  if (dmaCh & 4) p <<= 1;
  return p;
 }
-// Ç®·®‚ ≠† Ø‡•‡Î¢†≠®ÔÂ SB ®ß ≠•• ¢ÎßÎ¢†•‚Ï·Ô ¨ÆÔ ‰„≠™Ê®Ô PLAY
+// –í–∏—Å–∏—Ç –Ω–∞ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏—è—Ö SB –∏–∑ –Ω–µ–µ –≤—ã–∑—ã–≤–∞–µ—Ç—å—Å—è –º–æ—è —Ñ—É–Ω–∫—Ü–∏—è PLAY
 static void __interrupt irqInt()
 {
  if (irqPreEOI)
@@ -397,7 +397,7 @@ static void __interrupt irqInt()
        }
 }
 
-// ì·‚†≠†¢´®¢†•‚ ¨Æ© Æ°‡†°Æ‚Á®™ Ø‡•‡Î¢†≠®© ≠† SB_IRQ
+// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ—Ç –º–æ–π –æ–±—Ä–∞–±–æ—Ç—á–∏–∫ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π –Ω–∞ SB_IRQ
 void irqInit(unsigned char inum, void (*routine)(), unsigned char pre)
 {
  irqPreEOI  = pre;
@@ -413,14 +413,14 @@ void irqInit(unsigned char inum, void (*routine)(), unsigned char pre)
  outp(irqPort, inp(irqPort)&~(1 << (inum&7)));
 }
 
-// ì·‚†≠†¢´®¢†•‚ ·‚†‡Î© Æ°‡†°Æ‚Á®™ Ø‡•‡Î¢†≠®© ≠† SB_IRQ
+// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ—Ç —Å—Ç–∞—Ä—ã–π –æ–±—Ä–∞–±–æ—Ç—á–∏–∫ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π –Ω–∞ SB_IRQ
 void irqClose()
 {
  outp(irqPort, inp(irqPort)|irqOldMask);
  setvect(irqIntNum, irqOldInt);
 }
 
-// ç†Á†‚Ï ¢Î¢Æ§ ≠† SB
+// –ù–∞—á–∞—Ç—å –≤—ã–≤–æ–¥ –Ω–∞ SB
 void StartDAC(void)
 {
  unsigned short DSP = DSPver / 100;
@@ -479,7 +479,7 @@ void StartDAC(void)
    break;
    }
 }
-// é·‚†≠Æ¢®‚Ï SB
+// –û—Å—Ç–∞–Ω–æ–≤–∏—Ç—å SB
 static void StopDAC()
 {
  irqClose();
@@ -489,8 +489,8 @@ static void StopDAC()
  IRQacknowl16();
  dmaFree(dmabufsel);
 }
-// èÆ¢•‡®‚Ï •·‚Ï SB ≠† SB_PORT ®´® ≠•‚
-// ÇÆß¢‡†È†•‚:        0-éË®°™†
+// –ü–æ–≤–µ—Ä–∏—Ç—å –µ—Å—Ç—å SB –Ω–∞ SB_PORT –∏–ª–∏ –Ω–µ—Ç
+// –í–æ–∑–≤—Ä–∞—â–∞–µ—Ç:        0-–û—à–∏–±–∫–∞
 //                    1-OK
 static unsigned char CheckSB()
 {
@@ -534,9 +534,9 @@ static unsigned char CheckSB()
 return rez;
 }
 
-// ëÆ°‡†‚Ï ¢·Ó ®≠‰Æ‡¨†Ê®Ó Æ SB
-// ÇÆß¢‡†È†•‚:     -1 - è•‡•¨•≠≠†Ô BLASTER ≠• „·‚†≠Æ¢´•≠†
-//                 -2 - Æ‚·„‚·‚¢„•‚ SB, ®´® ß†≠Ô‚ §‡„£®¨ Ø‡®´Æ¶•≠®•¨!
+// –°–æ–±—Ä–∞—Ç—å –≤—Å—é –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏—é –æ SB
+// –í–æ–∑–≤—Ä–∞—â–∞–µ—Ç:     -1 - –ü–µ—Ä–µ–º–µ–Ω–Ω–∞—è BLASTER –Ω–µ —É—Å—Ç–∞–Ω–æ–≤–ª–µ–Ω–∞
+//                 -2 - –æ—Ç—Å—É—Ç—Å—Ç–≤—É–µ—Ç SB, –∏–ª–∏ –∑–∞–Ω—è—Ç –¥—Ä—É–≥–∏–º –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ–º!
 //                  0 - OK
 short dwse_GetSBInfo()
 {
@@ -553,7 +553,7 @@ short dwse_GetSBInfo()
  return 0;
 }
 #include "mix.cpp"
-// ëÆß§†‚Ï ®ß ¢·•Â ™†≠†´Æ¢ Virtual DMA buffer 8 bit
+// –°–æ–∑–¥–∞—Ç—å –∏–∑ –≤—Å–µ—Ö –∫–∞–Ω–∞–ª–æ–≤ Virtual DMA buffer 8 bit
 static void PrepareVirtualBuffer8(void)
 {
  memset (vbuf,0,dmasize << 1);
@@ -580,7 +580,7 @@ static void PrepareVirtualBuffer8(void)
   Channel++;
   }
 }
-// ëÆß§†‚Ï ®ß ¢·•Â ™†≠†´Æ¢ Virtual DMA buffer 16 bit
+// –°–æ–∑–¥–∞—Ç—å –∏–∑ –≤—Å–µ—Ö –∫–∞–Ω–∞–ª–æ–≤ Virtual DMA buffer 16 bit
 static void PrepareVirtualBuffer16(void)
 {
  memset (vbuf,0,dmasize << 1);
@@ -608,7 +608,7 @@ static void PrepareVirtualBuffer16(void)
         Channel++;
     }
 }
-//Ñ´Ô ·‚•‡•Æ ‡•¶®¨†
+//–î–ª—è —Å—Ç–µ—Ä–µ–æ —Ä–µ–∂–∏–º–∞
 static void PrepareVirtualBufferStereo8(void)
 {
  memset (vbuf,0,dmasize << 1);
@@ -617,11 +617,11 @@ static void PrepareVirtualBufferStereo8(void)
     {
      if (Channel->busy && !Channel->pause)
        {
-        //ã•¢Î© ™†≠†´
+        //–õ–µ–≤—ã–π –∫–∞–Ω–∞–ª
         MixVoicesStereo (vbuf + rl,Channel->memory + Channel->curpos,
                          halfdmasize,Channel->volume,Channel->balright,Channel->k);
 
-        //è‡†¢Î© ™†≠†´
+        //–ü—Ä–∞–≤—ã–π –∫–∞–Ω–∞–ª
         MixVoicesStereo (vbuf + rr,Channel->memory + Channel->curpos,
                          halfdmasize,Channel->volume,Channel->balleft,Channel->k);
         Channel->curpos_step++;
@@ -641,7 +641,7 @@ static void PrepareVirtualBufferStereo8(void)
         Channel++;
     }
 }
-//16 °®‚ §´Ô ·®•‡•Æ ‡•¶®¨†
+//16 –±–∏—Ç –¥–ª—è —Å–∏–µ—Ä–µ–æ —Ä–µ–∂–∏–º–∞
 static void PrepareVirtualBufferStereo16(void)
 {
  memset (vbuf,0,dmasize << 1);
@@ -650,10 +650,10 @@ static void PrepareVirtualBufferStereo16(void)
     {
      if (Channel->busy && !Channel->pause)
        {
-        //ã•¢Î© ™†≠†´
+        //–õ–µ–≤—ã–π –∫–∞–Ω–∞–ª
         MixVoicesStereo (vbuf + rl,Channel->memory + Channel->curpos,
                          quarterdmasize,Channel->volume,Channel->balright,Channel->k);
-        //è‡†¢Î© ™†≠†´
+        //–ü—Ä–∞–≤—ã–π –∫–∞–Ω–∞–ª
         MixVoicesStereo (vbuf + rr,Channel->memory + Channel->curpos,
                          quarterdmasize,Channel->volume,Channel->balleft,Channel->k);
         Channel->curpos_step++;
@@ -673,20 +673,20 @@ static void PrepareVirtualBufferStereo16(void)
         Channel++;
     }
 }
-// á†·„≠„‚Ï ≠Æ¢Î• §†≠≠Î• ¢ DMA °„‰•‡
-// Ì‚† Ø‡ÆÊ† ‰Æ‡¨®‡„•‚ °„‰•‡ §Æ ‚Æ£Æ, ™†™ §Æ ≠•£Æ §ÆË•´
-// „™†ß†‚•´Ï Blaster'†.
+// –ó–∞—Å—É–Ω—É—Ç—å –Ω–æ–≤—ã–µ –¥–∞–Ω–Ω—ã–µ –≤ DMA –±—É—Ñ–µ—Ä
+// —ç—Ç–∞ –ø—Ä–æ—Ü–∞ —Ñ–æ—Ä–º–∏—Ä—É–µ—Ç –±—É—Ñ–µ—Ä –¥–æ —Ç–æ–≥–æ, –∫–∞–∫ –¥–æ –Ω–µ–≥–æ –¥–æ—à–µ–ª
+// —É–∫–∞–∑–∞—Ç–µ–ª—å Blaster'–∞.
 void UpDateDmaBuffer(void)
 {
-//Ñ´Ô Ø•‡¢Æ© Á†·‚®
+//–î–ª—è –ø–µ—Ä–≤–æ–π —á–∞—Å—Ç–∏
 if ((dmaoffset >= dmasize) && !part)
   {
-    //„™†ß†‚•´Ï ≠† ¢Î°‡†≠≠„Ó Ø‡ÆÊ•§„‡„
+    //—É–∫–∞–∑–∞—Ç–µ–ª—å –Ω–∞ –≤—ã–±—Ä–∞–Ω–Ω—É—é –ø—Ä–æ—Ü–µ–¥—É—Ä—É
     PrepareVirtualBuffer();
    ++part &= 1;
     CopyData(buf,vbuf);
   }
-//Ñ´Ô ¢‚Æ‡Æ© Á†·‚®
+//–î–ª—è –≤—Ç–æ—Ä–æ–π —á–∞—Å—Ç–∏
 if ((dmaoffset < dmasize) && part)
   {
    PrepareVirtualBuffer();
@@ -694,20 +694,20 @@ if ((dmaoffset < dmasize) && part)
    CopyData(buf + dmasize,vbuf);
   }
 }
-// Ç®·®‚ ≠† Ø‡•‡Î¢†≠®ÔÂ ‚†©¨•‡†, ØÆ§·Æ¢Î¢†•‚ SB ≠Æ¢Î• §†≠≠Î• §´Ô Ø‡Æ®£‡Î¢†≠®Ô
+// –í–∏—Å–∏—Ç –Ω–∞ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏—è—Ö —Ç–∞–π–º–µ—Ä–∞, –ø–æ–¥—Å–æ–≤—ã–≤–∞–µ—Ç SB –Ω–æ–≤—ã–µ –¥–∞–Ω–Ω—ã–µ –¥–ª—è –ø—Ä–æ–∏–≥—Ä—ã–≤–∞–Ω–∏—è
 void PlayerTimer(void)
 {
  dmaoffset = dmaGetBufPos();
  UpDateDmaBuffer();
 }
-//Ì¨„´®‡„•‚ Ø„·‚Æ© sb.
+//—ç–º—É–ª–∏—Ä—É–µ—Ç –ø—É—Å—Ç–æ–π sb.
 void NoneSB(void)
 {
 }
 void VoidProcedure(void)
 {
 }
-//á§•·Ï ·‚Æ®‚ ¨ÆÔ Ø‡ÆÊ•§„‡† ® ¢ÎßÎ¢†•‚Ï·Ô ·‚†‡†Ô
+//–ó–¥–µ—Å—å —Å—Ç–æ–∏—Ç –º–æ—è –ø—Ä–æ—Ü–µ–¥—É—Ä–∞ –∏ –≤—ã–∑—ã–≤–∞–µ—Ç—å—Å—è —Å—Ç–∞—Ä–∞—è
 static void __interrupt tmTimerHandler()
 {
  tmCount++;
@@ -720,7 +720,7 @@ static void __interrupt tmTimerHandler()
 outp(0x20,0x20);
 tmTimerRoutine();
 }
-//èÆ·‚†¢®‚Ï ¨ÆÓ Ø‡ÆÊ•§„‡„ ≠† ‚†©¨•‡
+//–ü–æ—Å—Ç–∞–≤–∏—Ç—å –º–æ—é –ø—Ä–æ—Ü–µ–¥—É—Ä—É –Ω–∞ —Ç–∞–π–º–µ—Ä
 static char tmInit(void (*rout)())
 {
   tmCount        = 1;
@@ -730,7 +730,7 @@ static char tmInit(void (*rout)())
   return 1;
 }
 
-// ì°‡†‚Ï ¨ÆÓ Ø‡ÆÊ•§„‡„ · ‚†©¨•‡†
+// –£–±—Ä–∞—Ç—å –º–æ—é –ø—Ä–æ—Ü–µ–¥—É—Ä—É —Å —Ç–∞–π–º–µ—Ä–∞
 static void tmClose()
 {
   setvect(0x08, tmOldTimer);
@@ -738,14 +738,14 @@ static void tmClose()
   outp(0x40, 0x00);
   outp(0x40, 0x00);
 }
-// èÆ§·Á®‚Î¢†•‚ LoTimer ® HiTimer ®ß Á†·‚Æ‚Î
+// –ü–æ–¥—Å—á–∏—Ç—ã–≤–∞–µ—Ç LoTimer –∏ HiTimer –∏–∑ —á–∞—Å—Ç–æ—Ç—ã
 static void CalculateTimerRate(unsigned short TimerHz)
 {
  LoTimer = LOBYTE(1190000 / TimerHz);
  HiTimer = HIBYTE(1190000 / TimerHz);
 }
 
-// ç†Á†‚Ï ®£‡†‚Ï ≠† SB
+// –ù–∞—á–∞—Ç—å –∏–≥—Ä–∞—Ç—å –Ω–∞ SB
 void PlaySB(void)
 {
  CalculateTimerRate(TimerRate);
@@ -758,14 +758,14 @@ void PlaySB(void)
      StartDAC();
     }
 }
-// è‡Æ®≠®‚®‚Ï Mixer
+// –ü—Ä–æ–∏–Ω–∏—Ç–∏—Ç—å Mixer
 
 static short SetParams(void)
 {
-   //Ö·´® sb ≠• ≠†©§•≠, ‚Æ ¢Î©‚® · ÆË®°™Æ©.
+   //–ï—Å–ª–∏ sb –Ω–µ –Ω–∞–π–¥–µ–Ω, —Ç–æ –≤—ã–π—Ç–∏ —Å –æ—à–∏–±–∫–æ–π.
    if (sbModel == -1)
      return -1;
-   //Ö·´® Á†·‚Æ‚† Ø‡Æ®£‡Î¢†≠®Ô >= 11025
+   //–ï—Å–ª–∏ —á–∞—Å—Ç–æ—Ç–∞ –ø—Ä–æ–∏–≥—Ä—ã–≤–∞–Ω–∏—è >= 11025
    if (rate >= 11025)
       dmasize       = (BEGSIZE * (rate / 11025)) * (stereo + 1)
                       *(output16bit + 1) ;
@@ -776,7 +776,7 @@ static short SetParams(void)
    quarterdmasize= dmasize / 4;
    dmalen = sblen= dmasize * 2;
    len           = 4 * dmasize;
-   VirtualBuffer = new unsigned short[dmasize]; //Ç®‡‚„†´Ï≠Î© DMA °„‰‰•‡ 16°®‚≠Î©
+   VirtualBuffer = new unsigned short[dmasize]; //–í–∏—Ä—Ç—É–∞–ª—å–Ω—ã–π DMA –±—É—Ñ—Ñ–µ—Ä 16–±–∏—Ç–Ω—ã–π
    if (!VirtualBuffer)
       return -2;
    if (output16bit)
@@ -795,13 +795,13 @@ static short SetParams(void)
    memset(Channels,0,sizeof(ChannelInfo) * MaxChannel);
 return 0;
 }
-//è•‡¢Æ• (‡„Á≠Æ•) Æ°≠Æ¢´•≠®• DMA
-//ØÆ‚Æ¨ DMA Æ°≠Æ¢´Ô•‚Ï·Ô ®ß Ø‡•‡Î¢†≠®©
+//–ü–µ—Ä–≤–æ–µ (—Ä—É—á–Ω–æ–µ) –æ–±–Ω–æ–≤–ª–µ–Ω–∏–µ DMA
+//–ø–æ—Ç–æ–º DMA –æ–±–Ω–æ–≤–ª—è–µ—Ç—å—Å—è –∏–∑ –ø—Ä–µ—Ä—ã–≤–∞–Ω–∏–π
 static void FirstDMAUpdate (void)
 {
  PrepareVirtualBuffer();
 }
-// Ñ•´†•‚ ¢·• §´Ô Initialization SB
+// –î–µ–ª–∞–µ—Ç –≤—Å–µ –¥–ª—è Initialization SB
 static short AutoInitSB (void)
 {
  short error = SetParams();
@@ -810,7 +810,7 @@ static short AutoInitSB (void)
     sbModel = -1;
     return error;
    }
- //Ø•‡•Æ°Æß≠†Á•≠®Ô ‰„≠™Ê®© ¢ ß†¢®·®¨Æ·‚® Æ‚ „·‚†≠Æ¢™®
+ //–ø–µ—Ä–µ–æ–±–æ–∑–Ω–∞—á–µ–Ω–∏—è —Ñ—É–Ω–∫—Ü–∏–π –≤ –∑–∞–≤–∏—Å–∏–º–æ—Å—Ç–∏ –æ—Ç —É—Å—Ç–∞–Ω–æ–≤–∫–∏
  if (!stereo)
    {
      if (output16bit)
@@ -833,7 +833,7 @@ static short AutoInitSB (void)
            }
            else
               {
-              //ØÆ™† §´Ô 8 °®‚
+              //–ø–æ–∫–∞ –¥–ª—è 8 –±–∏—Ç
                CopyData = CopyData8;
                PrepareVirtualBuffer = PrepareVirtualBufferStereo8;
               }
@@ -849,7 +849,7 @@ static short AutoInitSB (void)
   FirstDMAUpdate();
   return 0;
 }
-//¢Æß¢‡†È†•‚ :0 - „·Ø•Ë≠Æ
+//–≤–æ–∑–≤—Ä–∞—â–∞–µ—Ç :0 - —É—Å–ø–µ—à–Ω–æ
 short dwse_InitMixer(unsigned short rate,char bit,char mode)
     {
      if (initactive)
@@ -877,9 +877,9 @@ void dwse_CloseMixer(void)
  tmClose();
  RestoreTimer();
  if (VirtualBuffer)
-    delete VirtualBuffer; //Ç®‡‚„†´Ï≠Î© DMA °„‰‰•‡ 16°®‚≠Î©
+    delete VirtualBuffer; //–í–∏—Ä—Ç—É–∞–ª—å–Ω—ã–π DMA –±—É—Ñ—Ñ–µ—Ä 16–±–∏—Ç–Ω—ã–π
  if (buf)
-   free(buf);//Æ·¢Æ°Æ¶§†•¨ ¢Î§•´•≠≠„Ó Ø†¨Ô‚Ï
+   free(buf);//–æ—Å–≤–æ–±–æ–∂–¥–∞–µ–º –≤—ã–¥–µ–ª–µ–Ω–Ω—É—é –ø–∞–º—è—Ç—å
  if (Clip8)
     delete Clip8;
  if (clip8table)

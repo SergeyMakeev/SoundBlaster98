@@ -1,10 +1,10 @@
-#define LEVELS  33  //количество уровней громкости каждого сампла
-//таблицы соотвествий
+#define LEVELS  33  //╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╤Г╤А╨╛╨▓╨╜╨╡╨╣ ╨│╤А╨╛╨╝╨║╨╛╤Б╤В╨╕ ╨║╨░╨╢╨┤╨╛╨│╨╛ ╤Б╨░╨╝╨┐╨╗╨░
+//╤В╨░╨▒╨╗╨╕╤Ж╤Л ╤Б╨╛╨╛╤В╨▓╨╡╤Б╤В╨▓╨╕╨╣
 static unsigned char  MainVolume = 127;//
 char                 *Clip8      = 0,
                      *clip8table = 0;
 unsigned short       *Clip16     = 0;
-//имена все известных программе устройств
+//╨╕╨╝╨╡╨╜╨░ ╨▓╤Б╨╡ ╨╕╨╖╨▓╨╡╤Б╤В╨╜╤Л╤Е ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╨╡ ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓
 static char *devicename[] =
             {
              "Unknown",
@@ -19,7 +19,7 @@ static char *devicename[] =
             };
 //---------------------------------------------------------------------------
 static ChannelInfo *Channels;
-//устанавливает таблицу соответствия для 8 битного режима
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╤В╨░╨▒╨╗╨╕╤Ж╤Г ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╕╤П ╨┤╨╗╤П 8 ╨▒╨╕╤В╨╜╨╛╨│╨╛ ╤А╨╡╨╢╨╕╨╝╨░
 static void setnclip8range( char *buff,unsigned char n)
     {
      _asm cli
@@ -44,14 +44,14 @@ static void setnclip8range( char *buff,unsigned char n)
          }
      _asm sti
     }
-//устанавливает все таблицы соответствия для 8 битного режима
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨▓╤Б╨╡ ╤В╨░╨▒╨╗╨╕╤Ж╤Л ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╕╤П ╨┤╨╗╤П 8 ╨▒╨╕╤В╨╜╨╛╨│╨╛ ╤А╨╡╨╢╨╕╨╝╨░
 static void fillclip8table(void)
      {
        char k = 128 / (LEVELS - 1);
       for (char i = 0; i < LEVELS;i++)
            setnclip8range(clip8table + (i * shiftarray),(i  *  k) - 1);
      }
-//устанавливает таблицу соответствия для 8 битного режима
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╤В╨░╨▒╨╗╨╕╤Ж╤Г ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╕╤П ╨┤╨╗╤П 8 ╨▒╨╕╤В╨╜╨╛╨│╨╛ ╤А╨╡╨╢╨╕╨╝╨░
 static void setnclip16range(unsigned short *buff,unsigned char n)
     {
      _asm cli
@@ -76,14 +76,14 @@ static void setnclip16range(unsigned short *buff,unsigned char n)
          }
      _asm sti
     }
-//устанавливает все таблицы соответствия для 16 битного режима
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨▓╤Б╨╡ ╤В╨░╨▒╨╗╨╕╤Ж╤Л ╤Б╨╛╨╛╤В╨▓╨╡╤В╤Б╤В╨▓╨╕╤П ╨┤╨╗╤П 16 ╨▒╨╕╤В╨╜╨╛╨│╨╛ ╤А╨╡╨╢╨╕╨╝╨░
 static void fillclip16table(void)
    {
     setnclip16range(Clip16,127);
    }
 //----------------------------------------------------------------------------
-//возвращает номер канала у которого самая малая приоритетность.
-//Пустой канал также учитывается
+//╨▓╨╛╨╖╨▓╤А╨░╤Й╨░╨╡╤В ╨╜╨╛╨╝╨╡╤А ╨║╨░╨╜╨░╨╗╨░ ╤Г ╨║╨╛╤В╨╛╤А╨╛╨│╨╛ ╤Б╨░╨╝╨░╤П ╨╝╨░╨╗╨░╤П ╨┐╤А╨╕╨╛╤А╨╕╤В╨╡╤В╨╜╨╛╤Б╤В╤М.
+//╨Я╤Г╤Б╤В╨╛╨╣ ╨║╨░╨╜╨░╨╗ ╤В╨░╨║╨╢╨╡ ╤Г╤З╨╕╤В╤Л╨▓╨░╨╡╤В╤Б╤П
 static short GetMinPriority(void)
     {
      int number = 0;
@@ -102,7 +102,7 @@ static short GetMinPriority(void)
        }
   return number;
     }
-// Закрывает канал
+// ╨Ч╨░╨║╤А╤Л╨▓╨░╨╡╤В ╨║╨░╨╜╨░╨╗
 void dwse_StopChannel(unsigned short chan)
 {
  ChannelInfo *Channel = (Channels + chan);
@@ -114,7 +114,7 @@ void dwse_StopChannel(unsigned short chan)
  if (Channel->handle)
     *(Channel->handle) = -1;
 }
-// Играть канал: указатель,длина,канал,громкость,looping
+// ╨Ш╨│╤А╨░╤В╤М ╨║╨░╨╜╨░╨╗: ╤Г╨║╨░╨╖╨░╤В╨╡╨╗╤М,╨┤╨╗╨╕╨╜╨░,╨║╨░╨╜╨░╨╗,╨│╤А╨╛╨╝╨║╨╛╤Б╤В╤М,looping
 void dwse_PlayChannel (unsigned short chan,snd &c)
 {
  if (!c.buffer || !c.length || chan >= MaxChannel) return;
@@ -160,9 +160,9 @@ void dwse_PlayChannel (unsigned short chan,snd &c)
  Channel->busy        = 1;
  ActiveChannel++;
 }
-// Играть звук: структура спараметрами
-// Возвращает:        handle-OK,
-//                    -1 - Все каналы заняты (не установился).
+// ╨Ш╨│╤А╨░╤В╤М ╨╖╨▓╤Г╨║: ╤Б╤В╤А╤Г╨║╤В╤Г╤А╨░ ╤Б╨┐╨░╤А╨░╨╝╨╡╤В╤А╨░╨╝╨╕
+// ╨Т╨╛╨╖╨▓╤А╨░╤Й╨░╨╡╤В:        handle-OK,
+//                    -1 - ╨Т╤Б╨╡ ╨║╨░╨╜╨░╨╗╤Л ╨╖╨░╨╜╤П╤В╤Л (╨╜╨╡ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╨╗╤Б╤П).
 short dwse_PlaySound (snd &c)
 {
  if (!initactive) return -1;
@@ -179,7 +179,7 @@ void dwse_CloseAllChannels(void)
      for (short i = 0;i < MaxChannel;i++)
         dwse_StopChannel(i);
     }
-// Изменяет громкость каналa
+// ╨Ш╨╖╨╝╨╡╨╜╤П╨╡╤В ╨│╤А╨╛╨╝╨║╨╛╤Б╤В╤М ╨║╨░╨╜╨░╨╗a
 void dwse_SetVolumeChannel (unsigned short chan,char volume)
 {
  if (!initactive || !Channels[chan].busy || chan >= MaxChannel)
@@ -188,7 +188,7 @@ void dwse_SetVolumeChannel (unsigned short chan,char volume)
  if (volume > (LEVELS - 1))  volume = LEVELS - 1;
  Channels[chan].volume     = volume;
 }
-//Устанавливает баланс при стерео режиме
+//╨г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨▒╨░╨╗╨░╨╜╤Б ╨┐╤А╨╕ ╤Б╤В╨╡╤А╨╡╨╛ ╤А╨╡╨╢╨╕╨╝╨╡
 void dwse_SetBalanceChannel(unsigned short chan,short level)
  {
  /*                             Balance
@@ -217,34 +217,34 @@ void dwse_SetNewPriority(unsigned short chan,short p)
       return;
      Channels[chan].priority = p;
     }
-//ставит паузу для конкретного канала
+//╤Б╤В╨░╨▓╨╕╤В ╨┐╨░╤Г╨╖╤Г ╨┤╨╗╤П ╨║╨╛╨╜╨║╤А╨╡╤В╨╜╨╛╨│╨╛ ╨║╨░╨╜╨░╨╗╨░
 void dwse_PauseChannel (unsigned short chan)
 {
  if (!initactive || !Channels[chan].busy || chan >= MaxChannel)
    return;
  Channels[chan].pause = 1;
 }
-//Продолжить играть канал
+//╨Я╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М ╨╕╨│╤А╨░╤В╤М ╨║╨░╨╜╨░╨╗
 void dwse_ContinueChannel (unsigned short chan)
 {
  if (!initactive || !Channels[chan].busy || chan >= MaxChannel)
    return;
  Channels[chan].pause = 0;
 }
-//ставит паузу для всех каналов
+//╤Б╤В╨░╨▓╨╕╤В ╨┐╨░╤Г╨╖╤Г ╨┤╨╗╤П ╨▓╤Б╨╡╤Е ╨║╨░╨╜╨░╨╗╨╛╨▓
 void dwse_PauseAllChannels (void)
 {
  for (short i = 0;i <  MaxChannel;i++)
     dwse_PauseChannel (i);
 }
-//продолжает проигрывание для всех каналов
+//╨┐╤А╨╛╨┤╨╛╨╗╨╢╨░╨╡╤В ╨┐╤А╨╛╨╕╨│╤А╤Л╨▓╨░╨╜╨╕╨╡ ╨┤╨╗╤П ╨▓╤Б╨╡╤Е ╨║╨░╨╜╨░╨╗╨╛╨▓
 void dwse_ContinueAllChannels(void)
 {
  for (short i = 0;i <  MaxChannel;i++)
     dwse_ContinueChannel(i);
 }
 
-//устанавливает глобальную громкость.
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨│╨╗╨╛╨▒╨░╨╗╤М╨╜╤Г╤О ╨│╤А╨╛╨╝╨║╨╛╤Б╤В╤М.
 void dwse_SetMainVolume(short vol)
     {
      if (!initactive) return;
@@ -256,7 +256,7 @@ void dwse_SetMainVolume(short vol)
        else
         setnclip8range(Clip8,MainVolume);
     }
-//утанавливает стерео или моно режим
+//╤Г╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╤Б╤В╨╡╤А╨╡╨╛ ╨╕╨╗╨╕ ╨╝╨╛╨╜╨╛ ╤А╨╡╨╢╨╕╨╝
 char dwse_SetPlayMode(unsigned char mode)
     {
      if (initactive) return 0;
@@ -281,7 +281,7 @@ char dwse_SetPlayMode(unsigned char mode)
           stereo = 0;
      return MONO;
     }
-//Устанавливает в системную переменную частоту проигрывания
+//╨г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В ╨▓ ╤Б╨╕╤Б╤В╨╡╨╝╨╜╤Г╤О ╨┐╨╡╤А╨╡╨╝╨╡╨╜╨╜╤Г╤О ╤З╨░╤Б╤В╨╛╤В╤Г ╨┐╤А╨╛╨╕╨│╤А╤Л╨▓╨░╨╜╨╕╤П
 unsigned short dwse_SetPlayRate(unsigned short num)
     {
       if (initactive) return 0;
@@ -306,7 +306,7 @@ unsigned short dwse_SetPlayRate(unsigned short num)
       rate = num;
     return rate;
     }
-//устанавливает 16 или 8 битное проигрывание
+//╤Г╤Б╤В╨░╨╜╨░╨▓╨╗╨╕╨▓╨░╨╡╤В 16 ╨╕╨╗╨╕ 8 ╨▒╨╕╤В╨╜╨╛╨╡ ╨┐╤А╨╛╨╕╨│╤А╤Л╨▓╨░╨╜╨╕╨╡
 char dwse_SetPlayQuality(unsigned char mode)
     {
      if (initactive) return 0;
@@ -337,7 +337,7 @@ void dwse_SetReverse(unsigned char mode)
          rr = 1;
         }
     }
-//перед проигрыванием установить количество каналов 1..64
+//╨┐╨╡╤А╨╡╨┤ ╨┐╤А╨╛╨╕╨│╤А╤Л╨▓╨░╨╜╨╕╨╡╨╝ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╨║╨╛╨╗╨╕╤З╨╡╤Б╤В╨▓╨╛ ╨║╨░╨╜╨░╨╗╨╛╨▓ 1..64
 char dwse_SetNumberChannels(char number)
     {
      if (initactive) return -1;
@@ -367,17 +367,17 @@ static short SetChannels(void)
      fillclip16table();
      return 0;
     }
-//вешает свою процедуру на прерывание
+//╨▓╨╡╤И╨░╨╡╤В ╤Б╨▓╨╛╤О ╨┐╤А╨╛╤Ж╨╡╨┤╤Г╤А╤Г ╨╜╨░ ╨┐╤А╨╡╤А╤Л╨▓╨░╨╜╨╕╨╡
 void dwse_InstallUserProcedure(void (*userproc)())
     {
      UserProcedure = userproc;
     }
-//убирает процедуру юзера
+//╤Г╨▒╨╕╤А╨░╨╡╤В ╨┐╤А╨╛╤Ж╨╡╨┤╤Г╤А╤Г ╤О╨╖╨╡╤А╨░
 void dwse_UninstallUserProcedure(void)
     {
      UserProcedure = VoidProcedure;
     }
-//определяет текущее устройство
+//╨╛╨┐╤А╨╡╨┤╨╡╨╗╤П╨╡╤В ╤В╨╡╨║╤Г╤Й╨╡╨╡ ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨╛
 char *dwse_GetDeviceName(void)
 
     {

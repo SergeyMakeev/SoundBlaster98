@@ -1,5 +1,5 @@
 static __segment     dmabufsel;
-// á†§•‡¶™† Óß†Ô BIOS
+// –ó–∞–¥–µ—Ä–∂–∫–∞ —é–∑–∞—è BIOS
 static void biosdelay(unsigned long c)
 {
  volatile unsigned long &biosclock = *(volatile unsigned long*) 0x46C;
@@ -7,11 +7,11 @@ static void biosdelay(unsigned long c)
  while ((biosclock - t0) < c)
  break;
 }
-// ÇÎ§•´®‚Ï Ø†¨Ô‚Ï DOS
-// Ç·ØÆ¨Æ£†‚•´Ï≠†Ô ‰„≠™Ê®Ô
-// ÇÆß¢‡†È†•‚:        0-ç• „§†´Æ·Ï ¢Î§•´®‚Ï Ø†¨Ô‚Ï
-//                    ì™†ß†‚•´Ï ≠† ¢Î§•´•≠„Ó Ø†¨Ô‚Ï
-// á†Ø‡Æ£‡†¨®‡Æ¢†‚Ï DMA ≠† Æ·‚†≠Æ¢™„ Ø•‡•§†Á®
+// –í—ã–¥–µ–ª–∏—Ç—å –ø–∞–º—è—Ç—å DOS
+// –í—Å–ø–æ–º–æ–≥–∞—Ç–µ–ª—å–Ω–∞—è —Ñ—É–Ω–∫—Ü–∏—è
+// –í–æ–∑–≤—Ä–∞—â–∞–µ—Ç:        0-–ù–µ —É–¥–∞–ª–æ—Å—å –≤—ã–¥–µ–ª–∏—Ç—å –ø–∞–º—è—Ç—å
+//                    –£–∫–∞–∑–∞—Ç–µ–ª—å –Ω–∞ –≤—ã–¥–µ–ª–µ–Ω—É—é –ø–∞–º—è—Ç—å
+// –ó–∞–ø—Ä–æ–≥—Ä–∞–º–∏—Ä–æ–≤–∞—Ç—å DMA –Ω–∞ –æ—Å—Ç–∞–Ω–æ–≤–∫—É –ø–µ—Ä–µ–¥–∞—á–∏
 
 static void *dosmalloc(unsigned long len, void __far16 *&rmptr, __segment &pmsel)
 {
@@ -26,8 +26,8 @@ static void *dosmalloc(unsigned long len, void __far16 *&rmptr, __segment &pmsel
  return (void *)((unsigned long)r.w.ax << 4);
 }
 
-// é·¢Æ°Æ§®‚Ï Ø†¨Ô‚Ï DOS
-// Ç·ØÆ¨Æ£†‚•´Ï≠†Ô ‰„≠™Ê®Ô
+// –û—Å–≤–æ–±–æ–¥–∏—Ç—å –ø–∞–º—è—Ç—å DOS
+// –í—Å–ø–æ–º–æ–≥–∞—Ç–µ–ª—å–Ω–∞—è —Ñ—É–Ω–∫—Ü–∏—è
 static void dosfree(__segment pmsel)
 {
  REGS r;
@@ -36,9 +36,9 @@ static void dosfree(__segment pmsel)
  int386(0x31, &r, &r);
 }
 
-// ÇÎ§•´®‚Ï DMA °„‰‰•‡
-// ÇÆß¢‡†È†•‚:        0-ç• „§†´Æ·Ï ¢Î§•´®‚Ï DMA °„‰‰•‡
-//                    ì™†ß†‚•´Ï ≠† ¢Î§•´•≠Î© DMA °„‰‰•‡
+// –í—ã–¥–µ–ª–∏—Ç—å DMA –±—É—Ñ—Ñ–µ—Ä
+// –í–æ–∑–≤—Ä–∞—â–∞–µ—Ç:        0-–ù–µ —É–¥–∞–ª–æ—Å—å –≤—ã–¥–µ–ª–∏—Ç—å DMA –±—É—Ñ—Ñ–µ—Ä
+//                    –£–∫–∞–∑–∞—Ç–µ–ª—å –Ω–∞ –≤—ã–¥–µ–ª–µ–Ω—ã–π DMA –±—É—Ñ—Ñ–µ—Ä
 void *dmaAlloc(int &buflen, __segment &pmsel)
 {
  if (buflen > 0x20000)
@@ -58,14 +58,14 @@ void *dmaAlloc(int &buflen, __segment &pmsel)
  return ptr;
 }
 
-// é·¢Æ°Æ§®‚Ï DMA °„‰‰•‡
+// –û—Å–≤–æ–±–æ–¥–∏—Ç—å DMA –±—É—Ñ—Ñ–µ—Ä
 void dmaFree(__segment pmseg)
 {
  dosfree(pmseg);
 }
 
 // GET INTERRUPT VECTOR
-// Ç·ØÆ¨Æ£†‚•´Ï≠†Ô ‰„≠™Ê®Ô
+// –í—Å–ø–æ–º–æ–≥–∞—Ç–µ–ª—å–Ω–∞—è —Ñ—É–Ω–∫—Ü–∏—è
 static void far *getvect(unsigned char intno)
 {
  REGS r;
@@ -78,7 +78,7 @@ static void far *getvect(unsigned char intno)
 }
 
 // SET INTERRUPT VECTOR
-// Ç·ØÆ¨Æ£†‚•´Ï≠†Ô ‰„≠™Ê®Ô
+// –í—Å–ø–æ–º–æ–≥–∞—Ç–µ–ª—å–Ω–∞—è —Ñ—É–Ω–∫—Ü–∏—è
 static void setvect(unsigned char intno, void far *vect)
 {
  REGS r;
@@ -90,7 +90,7 @@ static void setvect(unsigned char intno, void far *vect)
  sr.es   = 0;
  int386x(0x21, &r, &r, &sr);
 }
-// ì·‚†≠†¢´®¢†•‚ Á†·‚Æ‚„ ‚†©¨•‡†
+// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ—Ç —á–∞—Å—Ç–æ—Ç—É —Ç–∞–π–º–µ—Ä–∞
 static void SetTimer(void)
 {
  _asm {
@@ -102,7 +102,7 @@ static void SetTimer(void)
        out 0x40 ,al
       }
 }
-// ì·‚†≠†¢´®¢†•‚ Á†·‚Æ‚„ ‚†©¨•‡† 18.2
+// –£—Å—Ç–∞–Ω–∞–≤–ª–∏–≤–∞–µ—Ç —á–∞—Å—Ç–æ—Ç—É —Ç–∞–π–º–µ—Ä–∞ 18.2
 static void RestoreTimer(void)
 {
  _asm {
